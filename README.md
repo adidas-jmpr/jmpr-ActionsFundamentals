@@ -70,3 +70,5 @@ Find common terminology for reference [here](./CheatSheet.md)
 
 ## This is a change done by jmpr
 
+- Another change, this time through a PR
+
