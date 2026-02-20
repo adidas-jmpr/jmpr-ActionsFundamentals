@@ -11,13 +11,13 @@ on:
     outputs:
       current-time:
         description: 'The time when greeting.'
-        value: ${{ jobs.reusable-job.outputs.current-time }}
+        value: ${{ jobs.reusable-job.outputs.current-time }}    # We propagate the job output to the workflow output
 
 jobs:
   reusable-job:
     runs-on: ubuntu-latest
     outputs:
-      current-time: ${{ steps.time.outputs.time }}
+      current-time: ${{ steps.time.outputs.time }}              # We propagate the step output to the job output
     steps:
       - name: Greet someone
         run: echo "Hello ${{ inputs.who-to-greet }}"
