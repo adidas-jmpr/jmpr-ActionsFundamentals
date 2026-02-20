@@ -11,4 +11,4 @@ COPY entrypoint_v2.sh .
 RUN chmod +x entrypoint_v2.sh
 
 # Configure the container to be run as an executable
-ENTRYPOINT ["/usr/src/entrypoint.sh"]
+ENTRYPOINT ["/usr/src/entrypoint_v2.sh"]
