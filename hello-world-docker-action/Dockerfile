@@ -7,7 +7,7 @@ WORKDIR /usr/src
 RUN apk add --no-cache curl
 
 # Copy any source file(s) required for the action
-COPY entrypoint.sh .
+COPY entrypoint_v2.sh .
 RUN chmod +x entrypoint_v2.sh
 
 # Configure the container to be run as an executable
