@@ -8,7 +8,7 @@ RUN apk add --no-cache curl
 
 # Copy any source file(s) required for the action
 COPY entrypoint.sh .
-RUN chmod +x entrypoint.sh
+RUN chmod +x entrypoint_v2.sh
 
 # Configure the container to be run as an executable
 ENTRYPOINT ["/usr/src/entrypoint.sh"]
