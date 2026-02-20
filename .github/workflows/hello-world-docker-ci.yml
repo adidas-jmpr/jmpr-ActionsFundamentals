@@ -14,6 +14,6 @@ jobs:
         id: hello-world
         uses: ./hello-world-docker-action
         with:
-          who-to-greet: '@adidas-jmpr'
+          who-to-greet: '@adidas-jmpr0000'
       - name: Output
         run: echo "This action was executed at ${{ steps.hello-world.outputs.time}}"
