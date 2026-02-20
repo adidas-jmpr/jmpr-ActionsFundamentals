@@ -16,4 +16,4 @@ jobs:
         with:
           who-to-greet: '@adidas-jmpr'
       - name: Output
-        run: echo "This action was executed at ${{ steps.hello-world.outputs.time}}
+        run: echo "This action was executed at ${{ steps.hello-world.outputs.time}}"
